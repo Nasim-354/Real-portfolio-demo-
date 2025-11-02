@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Service pages</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+    <header class="bg-green-500 text-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-4 py-3">
+            <h1 class="text-2xl font-semibold">personal portfolio</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="Home.html" class="hover:text-yellow-400 font-bold">Home</a>
+                <a href="About.html" class="hover:text-yellow-400 font-bold">About</a>
+                <a href="Service.html" class="hover:text-yellow-400 font-bold">Service</a>
+                <a href="portfolio.html" class="hover:text-yellow-400 font-bold">portfolio</a>
+                <a href="Contact.html" class="hover:text-yellow-400 font-bold">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
+            <a href="Home.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="Service.html" class="block px-4 py-2 hover:bg-gray-700">Service</a>
+            <a href="portfolio.html" class="block px-4 py-2 hover:bg-gray-700">portfolio</a>
+            <a href="Contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- title section  -->
+    <section class="hero min-h-[60vh] bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl font-bold text-success mb-4">My Portfolio</h1>
+                <p class="text-gray-500 text-lg mb-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo quo neque tempore
+                    excepturi blanditiis esse magni sequi nobis enim, voluptate voluptatibus, fugit molestiae! Expedita
+                    amet dicta at vel quam.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="#projects" class="btn btn-success text-white">View Projects</a>
+                    <a href="About.html" class="btn btn-outline btn-success">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- all service section -->
+    <section class="px-6 py-16 bg-base-200">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-success mb-4">
+                My Services
+            </h1>
+            <p class="text-base-content/70 max-w-2xl mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                aliquam laudantium ex voluptatum cupiditate. Repellendus, quia eos? Autem quidem velit ratione maiores
+                consectetur hic, dicta soluta aspernatur!
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Service 1 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-primary mb-4">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Web Development</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+                </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-secondary mb-4">
+                    <i class="fa-solid fa-paint-brush"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">UI/UX Design</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-accent mb-4">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Mobile App Development</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+                </p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-info mb-4">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Backend Development</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+                </p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-warning mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">SEO Optimization</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+                </p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition p-6 text-center">
+                <div class="text-5xl text-success mb-4">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Cloud Integration</h2>
+                <p class="text-base-content/70">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique placeat? Soluta
+                    aliquam laudantium ex voluptatum cupiditate. Repellendus
+            </div>
+
+        </div>
+    </section>
+
+    <!-- clicent section  -->
+
+    <section class="px-6 py-16 bg-base-200">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold text-success mb-4">Our Clients</h2>
+            <p class="text-base-content/70 max-w-2xl mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ad! Facilis voluptate vero ipsa vel non
+                doloribus fuga expedita, adipisci similique odio rerum nisi quam, ut reiciendis repellendus officia
+                laborum.
+            </p>
+        </div>
+
+        <!-- Client Logos Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-6xl mx-auto items-center">
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 1" class="h-16 object-contain rounded" />
+            </div>
+
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 2" class="h-16 object-contain rounded" />
+            </div>
+
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 3" class="h-16 object-contain rounded" />
+            </div>
+
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 4" class="h-16 object-contain rounded" />
+            </div>
+
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 5" class="h-16 object-contain rounded" />
+            </div>
+            <div
+                class="flex justify-center items-center p-4 bg-base-100 rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="img/man-pic.jfif" alt="Client 6" class="h-16 object-contain rounded" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq -->
+    <section class="px-6 py-16 bg-base-200">
+        <h2 class="text-4xl font-bold text-success mb-4 text-center">FAQ</h2>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">How do I create an account?</div>
+            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
+                registration process.</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
+                instructions sent to your email.</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">How do I update my profile information?</div>
+            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer class="bg-green-500 text-white text-center py-6">
+        <p>&copy; <span id="datetime"></span> Copyright the Nasim, learn with easy tutorial</p>
+    </footer>
+
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>

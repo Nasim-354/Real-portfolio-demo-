@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact pages</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-green-500 text-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-4 py-3">
+            <h1 class="text-2xl font-semibold">personal portfolio</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="Home.html" class="hover:text-yellow-400 font-bold">Home</a>
+                <a href="About.html" class="hover:text-yellow-400 font-bold">About</a>
+                <a href="Service.html" class="hover:text-yellow-400 font-bold">Service</a>
+                <a href="portfolio.html" class="hover:text-yellow-400 font-bold">portfolio</a>
+                <a href="Contact.html" class="hover:text-yellow-400 font-bold">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
+            <a href="Home.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="Service.html" class="block px-4 py-2 hover:bg-gray-700">Service</a>
+            <a href="portfolio.html" class="block px-4 py-2 hover:bg-gray-700">portfolio</a>
+            <a href="Contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- contact section  -->
+
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact form</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+                <!-- Google Map -->
+                <div class="w-full h-[400px]">
+                    <iframe class="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9031939056935!2d90.39118691538477!3d23.750866794650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bf054b3b15%3A0x7d9077a3da1874f3!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1661785400000!5m2!1sen!2sbd"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contactForm" class="space-y-4 bg-white p-8 rounded-lg shadow-lg">
+                    <input type="text" id="name" placeholder="Your Name"
+                        class="w-full border px-4 py-2 rounded-md focus:ring focus:ring-success/40" required />
+
+                    <input type="email" id="email" placeholder="Your Email"
+                        class="w-full border px-4 py-2 rounded-md focus:ring focus:ring-success/40" required />
+
+                    <input type="tel" id="phone" placeholder="Your Phone"
+                        class="w-full border px-4 py-2 rounded-md focus:ring focus:ring-success/40" required />
+
+                    <textarea id="message" placeholder="Your Message" rows="4"
+                        class="w-full border px-4 py-2 rounded-md focus:ring focus:ring-success/40" required></textarea>
+
+                    <textarea id="address" placeholder="Your Address" rows="3"
+                        class="w-full border px-4 py-2 rounded-md focus:ring focus:ring-success/40" required></textarea>
+
+                    <button type="submit"
+                        class="btn btn-success w-full text-white px-6 py-2 rounded-md hover:bg-green-600">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+     
+    <footer class="bg-green-500 text-white text-center py-6">
+        <p>&copy; <span id="datetime"></span> Copyright the Nasim, learn with easy tutorial</p>
+    </footer>
+
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>
